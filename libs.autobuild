@@ -1,0 +1,11 @@
+
+
+cmake_package 'simulation/mars'
+
+in_flavor 'master','next' do
+
+end
+
+
+in_flavor 'master','next','stable' do
+end

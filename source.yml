@@ -3,14 +3,14 @@ name: rock_mars
 version_control:
     - simulation/*:
       type: git
-      url: $GITORIOUS_ROOT/simulation/$PACKAGE_BASENAME.git
-      push_to: $GITORIOUS_PUSH_ROOT/simulation/$PACKAGE_BASENAME.git
+      url: $GITORIOUS_ROOT/rock-simulation/$PACKAGE_BASENAME.git
+      push_to: $GITORIOUS_PUSH_ROOT/rock-simulation/$PACKAGE_BASENAME.git
       branch: $ROCK_FLAVOR
 
     - simulation/orogen/*:
       type: git
-      url: $GITORIOUS_ROOT/simulation/orogen-$PACKAGE_BASENAME.git
-      push_to: $GITORIOUS_PUSH_ROOT/simulation/orogen-$PACKAGE_BASENAME.git
+      url: $GITORIOUS_ROOT/rock-simulation/orogen-$PACKAGE_BASENAME.git
+      push_to: $GITORIOUS_PUSH_ROOT/rock-simulation/orogen-$PACKAGE_BASENAME.git
       branch: $ROCK_FLAVOR
 
 

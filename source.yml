@@ -6,11 +6,29 @@ version_control:
       url: $GITORIOUS_ROOT/rock-simulation/$PACKAGE_BASENAME.git
       push_to: $GITORIOUS_PUSH_ROOT/rock-simulation/$PACKAGE_BASENAME.git
       branch: $ROCK_FLAVOR
-
+    
     - simulation/orogen/*:
       type: git
       url: $GITORIOUS_ROOT/rock-simulation/orogen-$PACKAGE_BASENAME.git
       push_to: $GITORIOUS_PUSH_ROOT/rock-simulation/orogen-$PACKAGE_BASENAME.git
+      branch: $ROCK_FLAVOR
+
+    - external/ode:
+      type: git 
+      url: $SPACEGIT_ROOT/mars/ode.git
+      push_to: $SPACEGIT_PUSH_ROOT/mars/ode.git
+      branch: $ROCK_FLAVOR
+
+    - external/minizip:
+      type: git 
+      url: $SPACEGIT_ROOT/mars/minizip.git
+      push_to: $SPACEGIT_PUSH_ROOT/mars/minizip.git
+      branch: $ROCK_FLAVOR
+
+    - communication/adrf:
+      type: git 
+      url: $SPACEGIT_ROOT/mars/adrf.git
+      push_to: $SPACEGIT_PUSH_ROOT/mars/adrf.git
       branch: $ROCK_FLAVOR
 
 

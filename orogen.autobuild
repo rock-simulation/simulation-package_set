@@ -4,6 +4,7 @@ if package_enabled?('orogen')
     #default
 #    orogen_package 'simulation/orogen/mars_core'
     #end default
+    orogen_package 'simulation/orogen/mars_core' #this packaes has flavors, but everything expect master is unusable currently
 
     in_flavor 'master', 'next' do
     end

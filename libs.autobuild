@@ -1,6 +1,8 @@
 
 
+cmake_package 'communication/adrf'
 cmake_package 'simulation/mars'
+cmake_package 'simulation/mars-plugins/multisim_plugin'
 
 in_flavor 'master','next' do
 
@@ -8,4 +10,18 @@ end
 
 
 in_flavor 'master','next','stable' do
+    cmake_package 'external/minizip'
+    autotools_package 'external/ode' do |pkg|
+        pkg.depends_on 'libtool'
+        pkg.depends_on 'automake'
+        pkg.provides "pkgconfig/ode"
+        pkg.configureflags <<
+            "--enable-double-precision" <<
+            "--disable-demos" <<
+            "--enable-malloc" <<
+            "--with-drawstuff=none" <<
+            "CFLAGS=-fPIC -g -Wall" <<
+            "CXXFLAGS=-fPIC -g -Wall"
+    end
+
 end

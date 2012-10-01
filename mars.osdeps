@@ -12,4 +12,6 @@ qt4:
         - qt-core 
         - qt-gui
 
+uuid:
+    debian, ubuntu: uuid-dev 
 

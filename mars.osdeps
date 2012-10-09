@@ -11,7 +11,11 @@ qt4:
     gentoo:
         - qt-core 
         - qt-gui
-
 uuid:
     debian, ubuntu: uuid-dev 
 
+osg:
+    debian, ubuntu: libopenscenegraph-dev
+
+opencv:
+    debian, ubuntu: [libopencv-dev,libhighgui-dev,libcv-dev]

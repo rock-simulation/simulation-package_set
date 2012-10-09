@@ -18,4 +18,4 @@ osg:
     debian, ubuntu: libopenscenegraph-dev
 
 opencv:
-    debian, ubuntu: [libopencv-dev,libhighgui-dev,libcv-dev]
+    debian, ubuntu: [libopencv-dev, libhighgui-dev, libcv-dev]

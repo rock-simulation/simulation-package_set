@@ -19,3 +19,6 @@ osg:
 
 opencv:
     debian, ubuntu: [libopencv-dev, libhighgui-dev, libcv-dev]
+
+zlib: 
+  debian,ubuntu: zlib1g-dev

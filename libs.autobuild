@@ -37,6 +37,38 @@ in_flavor 'master' do
      end
     end
 
+    cmake_package "simulation/mars/cfg_manager_gui" do |pkg|
+     pkg.srcdir = File.dirname("simulation/mars/da")
+     pkg.post_import do
+      pkg.srcdir = File.dirname("simulation/mars/common/gui/cfg_manager_gui/da")
+      Autoproj.manifest.load_package_manifest(pkg.name)
+     end
+    end
+
+    cmake_package "simulation/mars/log_console" do |pkg|
+     pkg.srcdir = File.dirname("simulation/mars/da")
+     pkg.post_import do
+      pkg.srcdir = File.dirname("simulation/mars/common/gui/log_console/da")
+      Autoproj.manifest.load_package_manifest(pkg.name)
+     end
+    end
+
+    cmake_package "simulation/mars/data_broker_gui" do |pkg|
+     pkg.srcdir = File.dirname("simulation/mars/da")
+     pkg.post_import do
+      pkg.srcdir = File.dirname("simulation/mars/common/gui/data_broker_gui/da")
+      Autoproj.manifest.load_package_manifest(pkg.name)
+     end
+    end
+
+    cmake_package "simulation/mars/data_broker_plotter" do |pkg|
+     pkg.srcdir = File.dirname("simulation/mars/da")
+     pkg.post_import do
+      pkg.srcdir = File.dirname("simulation/mars/common/gui/data_broker_plotter/da")
+      Autoproj.manifest.load_package_manifest(pkg.name)
+     end
+    end
+
     cmake_package "simulation/mars/utils" do |pkg|
      pkg.srcdir = File.dirname("simulation/mars/da")
      pkg.post_import do
@@ -61,10 +93,50 @@ in_flavor 'master' do
      end
     end
 
+    cmake_package "simulation/mars/gui" do |pkg|
+     pkg.srcdir = File.dirname("simulation/mars/da")
+     pkg.post_import do
+      pkg.srcdir = File.dirname("simulation/mars/gui/da")
+      Autoproj.manifest.load_package_manifest(pkg.name)
+     end
+    end
+
+    cmake_package "simulation/mars/graphics" do |pkg|
+     pkg.srcdir = File.dirname("simulation/mars/da")
+     pkg.post_import do
+      pkg.srcdir = File.dirname("simulation/mars/graphics/da")
+      Autoproj.manifest.load_package_manifest(pkg.name)
+     end
+    end
+
     cmake_package "simulation/mars/app" do |pkg|
      pkg.srcdir = File.dirname("simulation/mars/da")
      pkg.post_import do
       pkg.srcdir = File.dirname("simulation/mars/app/da")
+      Autoproj.manifest.load_package_manifest(pkg.name)
+     end
+    end
+
+    cmake_package "simulation/mars/scene_loader" do |pkg|
+     pkg.srcdir = File.dirname("simulation/mars/da")
+     pkg.post_import do
+      pkg.srcdir = File.dirname("simulation/mars/scene_loader/da")
+      Autoproj.manifest.load_package_manifest(pkg.name)
+     end
+    end
+
+    cmake_package "simulation/mars/connexion_plugin" do |pkg|
+     pkg.srcdir = File.dirname("simulation/mars/da")
+     pkg.post_import do
+      pkg.srcdir = File.dirname("simulation/mars/plugins/connexion_plugin/da")
+      Autoproj.manifest.load_package_manifest(pkg.name)
+     end
+    end
+
+    cmake_package "simulation/mars/constraint_plugin" do |pkg|
+     pkg.srcdir = File.dirname("simulation/mars/da")
+     pkg.post_import do
+      pkg.srcdir = File.dirname("simulation/mars/plugins/constraint_plugin/da")
       Autoproj.manifest.load_package_manifest(pkg.name)
      end
     end

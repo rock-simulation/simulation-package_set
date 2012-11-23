@@ -1,7 +1,6 @@
 
 
 cmake_package 'communication/adrf'
-cmake_package 'simulation/mars'
 cmake_package 'simulation/mars-plugins/multisim_plugin'
 
 in_flavor 'master' do

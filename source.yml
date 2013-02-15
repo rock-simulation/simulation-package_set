@@ -1,4 +1,4 @@
-name: rock_mars 
+name: rock.simulation 
 
 version_control:
     - simulation/*:

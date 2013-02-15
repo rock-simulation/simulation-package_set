@@ -1,24 +1,10 @@
-libtool:
-     debian, ubuntu: [libtool]
-     gentoo: sys-devel/libtool
-
 automake:
     debian, ubuntu: automake1.10
     gentoo: sys-devel/automake
-qt4:
-    # QMake is needed for the CMake macro for Qt4
-    debian,ubuntu: [libqt4-dev, qt4-qmake]
-    gentoo:
-        - qt-core 
-        - qt-gui
-uuid:
-    debian, ubuntu: uuid-dev 
 
-osg:
-    debian, ubuntu: libopenscenegraph-dev
-
-opencv:
-    debian, ubuntu: [libopencv-dev, libhighgui-dev, libcv-dev]
+libtool:
+     debian, ubuntu: [libtool]
+     gentoo: sys-devel/libtool
 
 zlib: 
   debian,ubuntu: zlib1g-dev

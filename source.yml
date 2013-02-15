@@ -1,4 +1,4 @@
-name: rock.simulation 
+name: rock.simulation
 
 version_control:
     - simulation/*:
@@ -14,16 +14,25 @@ version_control:
       branch: $ROCK_FLAVOR
 
     - external/ode:
-      type: git 
-      url: $SPACEGIT_ROOT/mars/ode.git
-      push_to: $SPACEGIT_PUSH_ROOT/mars/ode.git
-      branch: $ROCK_FLAVOR
+      type: archive
+      url: http://freefr.dl.sourceforge.net/project/opende/ODE/0.12/ode-0.12.tar.bz2
+      patches: 
+      #WARNING, DO NOT CHANGE THE ORDER OF THE PATCHES
+        - $AUTOPROJ_SOURCE_DIR/ode-0.12-va_end.patch
+        - $AUTOPROJ_SOURCE_DIR/ode-0.12-lambda.patch
+        - $AUTOPROJ_SOURCE_DIR/ode-0.12-export_joint_internals.patch
+        - $AUTOPROJ_SOURCE_DIR/ode-0.12-abort.patch
+      update_cached_file: false
 
     - external/minizip:
-      type: git 
-      url: $SPACEGIT_ROOT/mars/minizip.git
-      push_to: $SPACEGIT_PUSH_ROOT/mars/minizip.git
-      branch: $ROCK_FLAVOR
+      type: archive
+      no_subdirectory: true
+      url: http://www.winimage.com/zLibDll/unzip11.zip
+      patches: 
+      #WARNING, DO NOT CHANGE THE ORDER OF THE PATCHES
+        - [$AUTOPROJ_SOURCE_DIR/minizip.patch, 1]
+        - [$AUTOPROJ_SOURCE_DIR/minizip_unzip.patch, 1]
+      update_cached_file: false
 
     - communication/adrf:
       type: git 

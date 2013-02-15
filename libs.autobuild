@@ -3,7 +3,7 @@
 cmake_package 'communication/adrf'
 cmake_package 'simulation/mars-plugins/multisim_plugin'
 
-in_flavor 'master' do
+in_flavor 'master','next','stable' do
     cmake_package "simulation/mars/lib_manager" do |pkg|
      pkg.srcdir = File.dirname("simulation/mars/da")
      pkg.post_import do

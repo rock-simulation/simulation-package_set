@@ -7,7 +7,6 @@ def mars_package(srcDir)
     if Gem::Version.new(Autobuild::VERSION) <= Gem::Version.new('1.7.2')
         mars_path="simulation/mars/"
         cmake_package srcDir do |pkg|
-            pkg.importdir = "simulation/mars/"
             pkg.srcdir = mars_path
             pkg.post_import do
                 pkg.srcdir = srcDir

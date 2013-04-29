@@ -34,10 +34,10 @@ version_control:
         - [$AUTOPROJ_SOURCE_DIR/minizip_unzip.patch, 1]
       update_cached_file: false
 
-    - communication/adrf:
-      type: git 
-      url: $SPACEGIT_ROOT/mars/adrf.git
-      push_to: $SPACEGIT_PUSH_ROOT/mars/adrf.git
-      branch: $ROCK_FLAVOR
-
+#    - communication/adrf:
+#      type: git 
+#      url: $SPACEGIT_ROOT/mars/adrf.git
+#      push_to: $SPACEGIT_PUSH_ROOT/mars/adrf.git
+#      branch: $ROCK_FLAVOR
+#
 

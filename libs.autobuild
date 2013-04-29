@@ -1,7 +1,7 @@
 
 
-cmake_package 'communication/adrf'
-cmake_package 'simulation/mars-plugins/multisim_plugin'
+#cmake_package 'communication/adrf' # Not part of the public stuff yet
+#cmake_package 'simulation/mars-plugins/multisim_plugin' #where is it gone?!
 
 def mars_package(srcDir)
     if Gem::Version.new(Autobuild::VERSION) <= Gem::Version.new('1.7.2')

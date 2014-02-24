@@ -3,19 +3,21 @@
 #cmake_package 'communication/adrf' # Not part of the public stuff yet
 #cmake_package 'simulation/mars-plugins/multisim_plugin' #where is it gone?!
 
-def mars_package(srcDir)
+def mars_package(srcDir,type = :cmake_package)
     if Gem::Version.new(Autobuild::VERSION) <= Gem::Version.new('1.7.2')
         mars_path="simulation/mars/"
-        cmake_package srcDir do |pkg|
+        send(type,srcDir) do |pkg|
             pkg.srcdir = mars_path
             pkg.post_import do
                 pkg.srcdir = srcDir
                 Autoproj.manifest.load_package_manifest(pkg.name)
             end
+            yield pkg if block_given?
         end
     else
-        cmake_package srcDir do |pkg|
+        send(type,srcDir) do |pkg|
             pkg.importdir = "simulation/mars/"
+            yield pkg if block_given?
         end
     end
 end
@@ -23,7 +25,6 @@ end
 
 in_flavor 'master','next','stable' do
     mars_package("simulation/mars/common/lib_manager")
-
     mars_package("simulation/mars/common/cfg_manager")
     mars_package("simulation/mars/common/gui/main_gui")
     mars_package("simulation/mars/common/data_broker")
@@ -41,6 +42,16 @@ in_flavor 'master','next','stable' do
     mars_package("simulation/mars/scene_loader")
     mars_package("simulation/mars/plugins/connexion_plugin")
     mars_package("simulation/mars/plugins/constraint_plugin")
+    
+    mars_package("simulation/mars/doc",:import_package) do |pkg|
+        pkg.doc_task do
+            pkg.progress_start "generating Documentation for for mars/doc", :done_message => 'generated_documentation for mars/doc' do
+                Autobuild::Subprocess.run(pkg, 'doc', Autobuild.tool(:make), "-C#{File.join(pkg.srcdir)}", 'doc')
+            end
+        end
+        pkg.doc_dir = 'doxygen/html'
+    end
+    
 end
 
 

@@ -25,6 +25,9 @@ end
 #This package is only known and needed on master
 only_in_flavor 'master' do 
     mars_package("simulation/mars/scripts/cmake")
+    mars_package("simulation/mars/plugins/Text3D")
+    mars_package("simulation/mars/common/graphics/osg_text")
+    mars_package("simulation/mars/common/graphics/osg_text_factory")
 end
 
 in_flavor 'master','next','stable' do
@@ -46,9 +49,6 @@ in_flavor 'master','next','stable' do
     mars_package("simulation/mars/scene_loader")
     mars_package("simulation/mars/plugins/connexion_plugin")
     mars_package("simulation/mars/plugins/constraint_plugin")
-    mars_package("simulation/mars/plugins/Text3D")
-    mars_package("simulation/mars/common/graphics/osg_text")
-    mars_package("simulation/mars/common/graphics/osg_text_factory")
     
     mars_package("simulation/mars/doc",:import_package) do |pkg|
         pkg.doc_task do

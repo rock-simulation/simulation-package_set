@@ -2,16 +2,13 @@ name: rock.simulation
 
 version_control:
     - simulation/*:
-      type: git
-      url: $GITORIOUS_ROOT/rock-simulation/mars.git
-      push_to: $GITORIOUS_PUSH_ROOT/rock-simulation/mars.git
-      branch: $ROCK_FLAVOR
+        github: rock-simulation/mars.git
+        branch: $ROCK_FLAVOR
+      
     
     - simulation/orogen/*:
-      type: git
-      url: $GITORIOUS_ROOT/rock-simulation/orogen-$PACKAGE_BASENAME.git
-      push_to: $GITORIOUS_PUSH_ROOT/rock-simulation/orogen-$PACKAGE_BASENAME.git
-      branch: $ROCK_FLAVOR
+        github: rock-simulation/orogen-$PACKAGE_BASENAME.git
+        branch: $ROCK_FLAVOR
 
     - external/ode:
       type: archive
@@ -33,11 +30,4 @@ version_control:
         - [$AUTOPROJ_SOURCE_DIR/minizip.patch, 1]
         - [$AUTOPROJ_SOURCE_DIR/minizip_unzip.patch, 1]
       update_cached_file: false
-
-#    - communication/adrf:
-#      type: git 
-#      url: $SPACEGIT_ROOT/mars/adrf.git
-#      push_to: $SPACEGIT_PUSH_ROOT/mars/adrf.git
-#      branch: $ROCK_FLAVOR
-#
 

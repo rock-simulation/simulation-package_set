@@ -5,10 +5,7 @@ if package_enabled?('orogen')
 #    orogen_package 'simulation/orogen/mars_core'
     #end default
 
-    in_flavor 'master', 'next' do
-    end
-
-    in_flavor 'master', 'next', 'stable' do
+    in_flavor 'rock1408_rc1' do
         orogen_package 'simulation/orogen/mars_core'
     end
 else

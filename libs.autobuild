@@ -23,14 +23,11 @@ def mars_package(srcDir,type = :cmake_package)
 end
 
 #This package is only known and needed on master
-only_in_flavor 'master' do 
+only_in_flavor 'rock1408_rc1' do 
     mars_package("simulation/mars/scripts/cmake")
     mars_package("simulation/mars/plugins/Text3D")
     mars_package("simulation/mars/common/graphics/osg_text")
     mars_package("simulation/mars/common/graphics/osg_text_factory")
-end
-
-in_flavor 'master','next','stable' do
     mars_package("simulation/mars/common/lib_manager")
     mars_package("simulation/mars/common/cfg_manager")
     mars_package("simulation/mars/common/gui/main_gui")
@@ -59,11 +56,6 @@ in_flavor 'master','next','stable' do
         end
         pkg.doc_dir = 'doxygen/html'
     end
-    
-end
-
-
-in_flavor 'master','next','stable' do
     cmake_package 'external/minizip'
     autotools_package 'external/ode' do |pkg|
         pkg.depends_on 'libtool'

@@ -42,10 +42,16 @@ in_flavor 'master','next','stable' do
     mars_package("simulation/mars/common/gui/data_broker_plotter")
     mars_package("simulation/mars/common/utils")
     mars_package("simulation/mars/interfaces")
-    mars_package("simulation/mars/sim")
+    mars_package("simulation/mars/sim") do |pkg|
+        #Define that mars should use the following path as default for it's configuration
+        #to enable the autostart of mars
+        pkg.define "DEFAULT_CONFIG_DIR", File.join(Autobuild.prefix,"configuration","mars_default")
+    end
     mars_package("simulation/mars/gui")
     mars_package("simulation/mars/graphics")
-    mars_package("simulation/mars/app")
+    mars_package("simulation/mars/app") do |pkg|
+        pkg.define "DEFAULT_CONFIG_DIR", File.join(Autobuild.prefix,"configuration","mars_default")
+    end
     mars_package("simulation/mars/viz")
     mars_package("simulation/mars/scene_loader")
     mars_package("simulation/mars/plugins/connexion_plugin")

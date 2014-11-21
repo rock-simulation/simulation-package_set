@@ -56,7 +56,6 @@ in_flavor 'master','next','stable' do
     mars_package("simulation/mars/scene_loader")
     mars_package("simulation/mars/plugins/connexion_plugin")
     mars_package("simulation/mars/plugins/constraint_plugin")
-    mars_package("simulation/mars/plugins/path_drawer")
     
     mars_package("simulation/mars/doc",:import_package) do |pkg|
         pkg.doc_task do

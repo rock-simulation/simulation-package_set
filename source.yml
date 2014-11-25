@@ -7,7 +7,7 @@ version_control:
       
     
     - simulation/orogen/*:
-        github: rock-simulation/orogen-$PACKAGE_BASENAME.git
+        github: rock-simulation/simulation-orogen-$PACKAGE_BASENAME.git
         branch: $ROCK_FLAVOR
 
     - external/ode:

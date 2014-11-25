@@ -1,7 +1,3 @@
-automake:
-    debian, ubuntu: automake1.10
-    gentoo: sys-devel/automake
-
 libtool:
      debian, ubuntu: [libtool]
      gentoo: sys-devel/libtool

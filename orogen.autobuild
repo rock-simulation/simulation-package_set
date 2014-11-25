@@ -1,5 +1,6 @@
 if package_enabled?('orogen')
     
+    orogen_package 'simulation/orogen/mars'
     
     #default
 #    orogen_package 'simulation/orogen/mars_core'

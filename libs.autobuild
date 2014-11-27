@@ -23,7 +23,7 @@ def mars_package(srcDir,type = :cmake_package)
 end
 
 #This package is only known and needed on master
-only_in_flavor 'master' do 
+in_flavor 'master' do 
     mars_package("simulation/mars/scripts/cmake")
     mars_package("simulation/mars/plugins/Text3D")
     mars_package("simulation/mars/common/graphics/osg_text")

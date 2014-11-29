@@ -71,7 +71,7 @@ end
 
 in_flavor 'master','next','stable' do
     cmake_package 'external/minizip'
-    autotools_package 'external/ode' do |pkg|
+    autotools_package 'simulation/ode' do |pkg|
         pkg.depends_on 'libtool'
         pkg.provides "pkgconfig/ode"
         pkg.configureflags <<

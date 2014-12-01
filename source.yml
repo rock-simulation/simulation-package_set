@@ -13,7 +13,7 @@ version_control:
     #Interrim soluation to not keep two separate repositorys for the same package
     - simulation/orogen/mars_core:
         github: rock-simulation/simulation-orogen-mars.git
-        branch: depricated-naming
+        branch: $ROCK_FLAVOR
 
     - external/ode:
       type: archive

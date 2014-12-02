@@ -75,6 +75,7 @@ in_flavor 'master','next','stable' do
     cmake_package 'external/minizip'
     autotools_package 'simulation/ode' do |pkg|
         pkg.depends_on 'libtool'
+        pkg.depends_on 'automake1.10'
         pkg.provides "pkgconfig/ode"
         pkg.configureflags <<
             "--enable-double-precision" <<

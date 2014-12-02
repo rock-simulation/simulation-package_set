@@ -4,3 +4,6 @@ libtool:
 
 zlib: 
   debian,ubuntu: zlib1g-dev
+
+automake1.10:
+     debian, ubuntu: [automake1.10]

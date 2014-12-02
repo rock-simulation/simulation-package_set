@@ -15,7 +15,7 @@ version_control:
         github: rock-simulation/simulation-orogen-mars.git
         branch: $ROCK_FLAVOR
 
-    - external/ode:
+    - simulation/ode:
       type: archive
       url: http://freefr.dl.sourceforge.net/project/opende/ODE/0.12/ode-0.12.tar.bz2
       patches: 

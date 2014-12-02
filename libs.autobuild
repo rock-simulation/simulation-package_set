@@ -73,7 +73,7 @@ end
 
 in_flavor 'master','next','stable' do
     cmake_package 'external/minizip'
-    autotools_package 'external/ode' do |pkg|
+    autotools_package 'simulation/ode' do |pkg|
         pkg.depends_on 'libtool'
         pkg.provides "pkgconfig/ode"
         pkg.configureflags <<
@@ -84,5 +84,5 @@ in_flavor 'master','next','stable' do
             "CFLAGS=-fPIC -O2 -Wall" <<
             "CXXFLAGS=-fPIC -O2 -Wall"
     end
-
+    Autoproj.add_osdeps_overrides 'external/ode', :package => 'simulation/ode'
 end

@@ -4,10 +4,9 @@ version_control:
     - simulation/*:
         github: rock-simulation/mars.git
         branch: $ROCK_FLAVOR
-      
     
-    - simulation/orogen/*:
-        github: rock-simulation/orogen-$PACKAGE_BASENAME.git
+    - simulation/orogen/mars_core:
+        github: rock-simulation/simulation-orogen-mars.git
         branch: $ROCK_FLAVOR
 
     - external/ode:

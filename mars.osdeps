@@ -1,6 +1,8 @@
 libtool:
-     debian, ubuntu: [libtool]
-     gentoo: sys-devel/libtool
-
+    debian, ubuntu: [libtool]
+    gentoo: sys-devel/libtool
+    opensuse: libtool
+    
 zlib: 
-  debian,ubuntu: zlib1g-dev
+    debian,ubuntu: zlib1g-dev
+    opensuse: zlib-devel

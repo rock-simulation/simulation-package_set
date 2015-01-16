@@ -61,11 +61,11 @@ in_flavor 'master','next','stable' do
     
     mars_package("simulation/mars/doc",:import_package) do |pkg|
         pkg.doc_task do
-            pkg.progress_start "generating Documentation for for mars/doc", :done_message => 'generated_documentation for mars/doc' do
+            pkg.progress_start "generating Documentation for mars/doc", :done_message => 'generated_documentation for mars/doc' do
                 Autobuild::Subprocess.run(pkg, 'doc', Autobuild.tool(:make), "-C#{File.join(pkg.srcdir)}", 'doc')
             end
         end
-        pkg.doc_dir = 'doxygen/html'
+        pkg.doc_dir = 'build'
     end
     
 end

@@ -9,7 +9,7 @@
     in_flavor 'master', 'next' do
     end
 
-    in_flavor 'master', 'next', 'stable' do
+    in_flavor 'next', 'stable' do
         orogen_package 'simulation/orogen/mars_core'
     end
 #else

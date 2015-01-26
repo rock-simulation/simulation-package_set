@@ -5,6 +5,9 @@ version_control:
         github: rock-simulation/mars.git
         branch: $ROCK_FLAVOR
       
+    - simulation/lib_manager:
+        github: rock-simulation/lib_manager.git
+        branch: $ROCK_FLAVOR
     
     - simulation/orogen/*:
         github: rock-simulation/simulation-orogen-$PACKAGE_BASENAME.git

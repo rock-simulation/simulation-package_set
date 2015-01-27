@@ -16,6 +16,7 @@ def mars_package(srcDir,type = :cmake_package)
         end
     else
         send(type,srcDir) do |pkg|
+            pkg.define "ROCK",'true' if type == :cmake_package
             pkg.importdir = "simulation/mars/"
             yield pkg if block_given?
         end

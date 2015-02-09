@@ -8,6 +8,14 @@ version_control:
     - simulation/lib_manager:
         github: rock-simulation/lib_manager.git
         branch: $ROCK_FLAVOR
+
+    - simulation/smurf_parser:
+        github: rock-simulation/smurf_parser.git
+        branch: $ROCK_FLAVOR    
+
+    - simulation/configmaps:
+        github: rock-simulation/configmaps.git
+        branch: $ROCK_FLAVOR            
     
     - simulation/orogen/*:
         github: rock-simulation/simulation-orogen-$PACKAGE_BASENAME.git

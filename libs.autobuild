@@ -26,6 +26,8 @@ end
 #This package is only known and needed on master
 in_flavor 'master' do 
     cmake_package("simulation/lib_manager")
+    cmake_package("simulation/smurf_parser")
+    cmake_package("simulation/configmaps")
     mars_package("simulation/mars/urdf_loader")
     mars_package("simulation/mars/plugins/Text3D")
     mars_package("simulation/mars/common/graphics/osg_text")

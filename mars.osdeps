@@ -2,7 +2,8 @@ libtool:
     debian, ubuntu: [libtool]
     gentoo: sys-devel/libtool
     opensuse: libtool
-    
+    darwin: glibtool
+
 zlib: 
     debian,ubuntu: zlib1g-dev
     opensuse: zlib-devel

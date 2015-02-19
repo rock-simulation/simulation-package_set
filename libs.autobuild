@@ -36,7 +36,7 @@ in_flavor 'master' do
     mars_package("simulation/mars/common/graphics/osg_text_factory")
 end
 
-only_in_flavor 'next','stable' do
+in_flavor 'next','stable' do
     mars_package("simulation/mars/common/lib_manager")
 end
 

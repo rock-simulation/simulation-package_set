@@ -1,5 +1,8 @@
 name: rock.simulation
 
+imports:
+    - github: rock-core/package_set
+
 version_control:
     - simulation/*:
         github: rock-simulation/mars.git

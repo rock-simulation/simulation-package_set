@@ -34,6 +34,7 @@ in_flavor 'master' do
     mars_package("simulation/mars/plugins/Text3D")
     mars_package("simulation/mars/common/graphics/osg_text")
     mars_package("simulation/mars/common/graphics/osg_text_factory")
+    mars_package("simulation/mars/common/graphics/osg_lines")
 end
 
 in_flavor 'next','stable' do
@@ -41,7 +42,7 @@ in_flavor 'next','stable' do
 end
 
 in_flavor 'master','next','stable' do
-    mars_package("simulation/mars/common/graphics/osg_lines")
+
     mars_package("simulation/mars/scripts/cmake")
     mars_package("simulation/mars/common/cfg_manager")
     mars_package("simulation/mars/common/gui/main_gui")

@@ -1,0 +1,8 @@
+<package>
+    <description brief="ode">
+       open dynamics engine
+    </description>
+
+    <depend package="automake" />
+    <depend package="libtool" />
+</package>

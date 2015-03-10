@@ -4,6 +4,9 @@ libtool:
     opensuse: libtool
     darwin: glibtool
 
+automake:
+    debian, ubuntu: [automake]
+
 zlib: 
     debian,ubuntu: zlib1g-dev
     opensuse: zlib-devel

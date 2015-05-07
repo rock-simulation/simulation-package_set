@@ -7,4 +7,5 @@ end
 in_flavor 'master', 'stable' do
     orogen_package 'simulation/orogen/mars'
     orogen_package 'simulation/orogen/mars_addons'
+    orogen_package 'simulation/orogen/mars_core'
 end

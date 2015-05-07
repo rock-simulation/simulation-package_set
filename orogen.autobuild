@@ -1,18 +1,10 @@
-#if package_enabled?('orogen')
     
+    
+
+in_flavor 'master' do
+end
+
+in_flavor 'master', 'stable' do
     orogen_package 'simulation/orogen/mars'
     orogen_package 'simulation/orogen/mars_addons'
-    
-    #default
-#    orogen_package 'simulation/orogen/mars_core'
-    #end default
-
-    in_flavor 'master', 'next' do
-    end
-
-    in_flavor 'next', 'stable' do
-        orogen_package 'simulation/orogen/mars_core'
-    end
-#else
-#    Autoproj.warn "oroGen is not enabled, skipping the oroGen packages"
-#end
+end

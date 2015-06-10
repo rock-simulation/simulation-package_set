@@ -4,7 +4,7 @@ imports:
     - github: rock-core/package_set
 
 version_control:
-    - simulation/*:
+    - simulation/.*:
         github: rock-simulation/mars.git
         branch: $ROCK_FLAVOR
       
@@ -20,7 +20,7 @@ version_control:
         github: rock-simulation/configmaps.git
         branch: $ROCK_FLAVOR            
     
-    - simulation/orogen/*:
+    - simulation/orogen/.*:
         github: rock-simulation/simulation-orogen-$PACKAGE_BASENAME.git
         branch: $ROCK_FLAVOR
    

@@ -44,7 +44,7 @@ version_control:
     - external/minizip:
       type: archive
       no_subdirectory: true
-      url: http://www.winimage.com/zLibDll/unzip11.zip
+      url: https://miranda-dev.googlecode.com/files/unzip11.zip
       patches: 
       #WARNING, DO NOT CHANGE THE ORDER OF THE PATCHES
         - [$AUTOPROJ_SOURCE_DIR/minizip.patch, 1]

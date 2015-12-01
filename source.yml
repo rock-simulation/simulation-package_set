@@ -44,10 +44,10 @@ version_control:
     - external/minizip:
       type: archive
       no_subdirectory: true
-      url: http://www.winimage.com/zLibDll/unzip11.zip
+      url: http://www.winimage.com/zLibDll/unzip101e.zip
       patches: 
       #WARNING, DO NOT CHANGE THE ORDER OF THE PATCHES
         - [$AUTOPROJ_SOURCE_DIR/minizip.patch, 1]
-        - [$AUTOPROJ_SOURCE_DIR/minizip_unzip.patch, 1]
+#        - [$AUTOPROJ_SOURCE_DIR/minizip_unzip.patch, 1]
       update_cached_file: false
 

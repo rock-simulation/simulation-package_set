@@ -23,6 +23,7 @@ end
 in_flavor 'master' do 
     mars_package("simulation/mars/common/gui/config_map_gui")
     mars_package("simulation/mars/common/gui/gui_app")
+    mars_package("simulation/mars/entity_generation/primitives")
 end
 
 

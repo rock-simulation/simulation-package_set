@@ -25,6 +25,7 @@ in_flavor 'master' do
     mars_package("simulation/mars/common/gui/gui_app")
     mars_package("simulation/mars/entity_generation/primitives")
     mars_package("simulation/mars/plugins/entity_view")
+    mars_package("simulation/mars/plugins/SkyDomePlugin")
 end
 
 

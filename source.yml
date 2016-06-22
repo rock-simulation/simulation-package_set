@@ -16,7 +16,7 @@ version_control:
         github: rock-simulation/smurf_parser.git
         branch: $ROCK_FLAVOR    
 
-    - simulation/configmaps:
+    - tools/configmaps:
         github: rock-simulation/configmaps.git
         branch: $ROCK_FLAVOR            
     

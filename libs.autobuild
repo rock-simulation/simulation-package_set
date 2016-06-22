@@ -39,8 +39,10 @@ in_flavor 'master','stable' do
     mars_package("simulation/mars/common/graphics/osg_lines")
     
     cmake_package("simulation/lib_manager")
-    cmake_package("simulation/configmaps")
     cmake_package("simulation/smurf_parser")
+
+    cmake_package("tools/configmaps")
+    metapackage 'simulation/configmaps', 'tools/configmaps'
 
     mars_package("simulation/mars/scripts/cmake")
     mars_package("simulation/mars/common/cfg_manager")

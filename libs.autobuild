@@ -28,12 +28,13 @@ in_flavor 'master' do
     mars_package("simulation/mars/plugins/SkyDomePlugin")
 end
 
+=begin
 in_flavor 'develop' do
     mars_package("simulation/mars/common/graphics/osg_material_manager")
     mars_package("simulation/mars/common/graphics/osg_terrain")
     mars_package("simulation/mars/plugins/TerrainPlugin")
 end
-
+=end
 
 in_flavor 'master','stable' do
     mars_package("simulation/mars/entity_generation/entity_factory")

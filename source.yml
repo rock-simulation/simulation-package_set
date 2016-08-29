@@ -1,6 +1,7 @@
 name: rock.simulation
 
 imports:
+    - github: rock-core/rock-package_set
     - github: rock-core/package_set
 
 version_control:

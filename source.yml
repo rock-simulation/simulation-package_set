@@ -5,10 +5,6 @@ imports:
     - github: rock-core/package_set
 
 version_control:
-    - simulation/.*:
-        github: rock-simulation/mars.git
-        branch: $ROCK_FLAVOR
-
     #interactive true means no multi-threaded pulls from this git repo
     - simulation/mars/.*:
         github: rock-simulation/mars

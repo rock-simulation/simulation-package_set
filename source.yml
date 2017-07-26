@@ -8,7 +8,6 @@ version_control:
     #interactive true means no multi-threaded pulls from this git repo
     - simulation/mars/.*:
         github: rock-simulation/mars
-        tag:
         interactive: true 
 
     - simulation/lib_manager:

@@ -8,7 +8,7 @@ zlib:
     debian,ubuntu: zlib1g-dev
     opensuse: zlib-devel
 
-json-cpp:
-    debian: libjson-cpp-dev
+jsoncpp:
+    debian: libjsoncpp-dev
     ubuntu:
-        default: libjson-cpp-dev
+        default: libjsoncpp-dev

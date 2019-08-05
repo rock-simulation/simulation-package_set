@@ -103,3 +103,12 @@ in_flavor 'master','stable' do
     
 end
 
+import_package 'models/robots/robo2'
+import_package 'models/robots/robo3'
+import_package 'models/robots/turtlebot'
+import_package 'models/robots/stick_insect'
+import_package 'models/robots/wheelchair'
+import_package 'models/environments/area1'
+import_package 'models/environments/area2'
+import_package 'models/environments/office1'
+import_package 'models/environments/lecture_room'

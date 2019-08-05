@@ -53,3 +53,8 @@ version_control:
 #       - [$AUTOPROJ_SOURCE_DIR/minizip_unzip.patch, 1]
       update_cached_file: false
 
+    - models/robots/.*:
+        github: rock-simulation/$PACKAGE_BASENAME.git
+
+    - models/environments/.*:
+        github: rock-simulation/$PACKAGE_BASENAME.git

@@ -3,6 +3,7 @@ name: rock.simulation
 imports:
     - github: rock-core/rock-package_set
     - github: rock-core/package_set
+    - github: dfki-ric/bagel_package_set
 
 version_control:
     #interactive true means no multi-threaded pulls from this git repo
@@ -58,3 +59,7 @@ version_control:
 
     - models/environments/.*:
         github: rock-simulation/$PACKAGE_BASENAME.git
+
+    - simulation/mars_extensions/data_broker_graph_view:
+        github: rock-simulation/data_broker_graph_view.git
+        branch: $ROCK_FLAVOR

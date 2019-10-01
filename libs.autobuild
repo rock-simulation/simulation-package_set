@@ -32,6 +32,7 @@ mars_package("simulation/mars/common/graphics/osg_points")
 mars_package("simulation/mars/plugins/TerrainPlugin")
 mars_package("simulation/mars/plugins/PythonMars")
 mars_package("simulation/mars/common/gui/data_broker_plotter2")
+cmake_package("simulation/mars_extensions/data_broker_graph_view")
 
 in_flavor 'stable' do
     mars_package("simulation/mars/scripts/cmake")

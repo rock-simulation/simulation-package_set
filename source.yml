@@ -51,7 +51,7 @@ version_control:
       patches:
       #WARNING, DO NOT CHANGE THE ORDER OF THE PATCHES
         - $AUTOPROJ_SOURCE_DIR/ode-0.16-lambda.patch
-        - $AUTOPROJ_SOURCE_DIR/ode-0.12-export_joint_internals.patch
+        #- $AUTOPROJ_SOURCE_DIR/ode-0.12-export_joint_internals.patch
         - $AUTOPROJ_SOURCE_DIR/ode-0.16-abort.patch
         - $AUTOPROJ_SOURCE_DIR/ode-0.12-osx.patch
         - $AUTOPROJ_SOURCE_DIR/ode-0.16-heightfield.patch

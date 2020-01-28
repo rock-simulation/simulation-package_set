@@ -101,6 +101,17 @@ in_flavor 'master','stable' do
             "CFLAGS=-fPIC -O2 -Wall" <<
             "CXXFLAGS=-fPIC -O2 -Wall"
     end
+    autotools_package 'simulation/ode-16' do |pkg|
+        pkg.depends_on 'libtool'
+        pkg.provides "pkgconfig/ode"
+        pkg.configureflags <<
+            "--enable-double-precision" <<
+            "--disable-demos" <<
+            "--enable-malloc" <<
+            "--with-drawstuff=none" <<
+            "CFLAGS=-fPIC -O2 -Wall" <<
+            "CXXFLAGS=-fPIC -O2 -Wall"
+    end
     Autoproj.add_osdeps_overrides 'external/ode', :package => 'simulation/ode'
     
 end

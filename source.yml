@@ -45,6 +45,18 @@ version_control:
         - $AUTOPROJ_SOURCE_DIR/ode-0.12-heightfield.patch
       update_cached_file: false
 
+    - simulation/ode-16:
+      type: archive
+      url: https://bitbucket.org/odedevs/ode/downloads/ode-0.16.tar.gz
+      patches:
+      #WARNING, DO NOT CHANGE THE ORDER OF THE PATCHES
+        - $AUTOPROJ_SOURCE_DIR/ode-0.16-lambda.patch
+        - $AUTOPROJ_SOURCE_DIR/ode-0.12-export_joint_internals.patch
+        - $AUTOPROJ_SOURCE_DIR/ode-0.16-abort.patch
+        - $AUTOPROJ_SOURCE_DIR/ode-0.12-osx.patch
+        - $AUTOPROJ_SOURCE_DIR/ode-0.16-heightfield.patch
+      update_cached_file: false
+
     - external/minizip:
       type: archive
       no_subdirectory: true

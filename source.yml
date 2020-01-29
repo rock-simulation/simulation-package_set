@@ -53,7 +53,7 @@ version_control:
         - $AUTOPROJ_SOURCE_DIR/ode-0.16-lambda.patch
         #- $AUTOPROJ_SOURCE_DIR/ode-0.12-export_joint_internals.patch
         - $AUTOPROJ_SOURCE_DIR/ode-0.16-abort.patch
-        - $AUTOPROJ_SOURCE_DIR/ode-0.12-osx.patch
+        #- $AUTOPROJ_SOURCE_DIR/ode-0.12-osx.patch
         - $AUTOPROJ_SOURCE_DIR/ode-0.16-heightfield.patch
       update_cached_file: false
 

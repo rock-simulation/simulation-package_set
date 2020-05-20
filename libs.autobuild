@@ -104,10 +104,7 @@ in_flavor 'master','stable' do
             "CXXFLAGS=-fPIC -O2 -Wall"
     end
     autotools_package 'simulation/ode-16' do |pkg|
-        def pkg.prepare
-            system('cd simulation/ode-16;./bootstrap')
-	    super
-	end
+        pkg.using[:autogen] = 'bootstrap'
         pkg.depends_on 'libtool'
         pkg.provides "pkgconfig/ode"
         pkg.configureflags <<

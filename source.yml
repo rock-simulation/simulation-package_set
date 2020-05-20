@@ -46,8 +46,9 @@ version_control:
       update_cached_file: false
 
     - simulation/ode-16:
-      type: archive
-      url: https://bitbucket.org/odedevs/ode/downloads/ode-0.16.tar.gz
+      type: git
+      url: https://bitbucket.org/odedevs/ode.git
+      tag: 0.16
       patches:
       #WARNING, DO NOT CHANGE THE ORDER OF THE PATCHES
         - $AUTOPROJ_SOURCE_DIR/ode-0.16-lambda.patch
@@ -55,7 +56,6 @@ version_control:
         - $AUTOPROJ_SOURCE_DIR/ode-0.16-abort.patch
         #- $AUTOPROJ_SOURCE_DIR/ode-0.12-osx.patch
         - $AUTOPROJ_SOURCE_DIR/ode-0.16-heightfield.patch
-      update_cached_file: false
 
     - external/minizip:
       type: archive

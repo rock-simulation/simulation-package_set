@@ -76,3 +76,7 @@ version_control:
     - simulation/mars_extensions/data_broker_graph_view:
         github: rock-simulation/data_broker_graph_view.git
         branch: $ROCK_FLAVOR
+
+    - external/osgQt:
+        github: rock-simulation/osgQt.git
+        branch: topic/Qt4

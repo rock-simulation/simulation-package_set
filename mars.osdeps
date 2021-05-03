@@ -15,3 +15,10 @@ jsoncpp:
     debian: libjsoncpp-dev
     ubuntu:
         default: libjsoncpp-dev
+
+external/osgQt:
+    ubuntu:
+        "20.04, 20.10": nonexistent
+        default:
+            osdep: osg # included in default packages    
+    debian: osg        

@@ -29,6 +29,7 @@ mars_package("simulation/mars/plugins/CameraGUI")
 mars_package("simulation/mars/common/graphics/osg_material_manager")
 mars_package("simulation/mars/common/graphics/osg_terrain")
 mars_package("simulation/mars/common/graphics/osg_points")
+mars_package("simulation/mars/common/graphics/osg_frames")
 mars_package("simulation/mars/plugins/TerrainPlugin")
 mars_package("simulation/mars/plugins/PythonMars") do |pkg|
     pkg.env_add_path 'PYTHONPATH', File.join(pkg.prefix, "share","PythonMars","python")

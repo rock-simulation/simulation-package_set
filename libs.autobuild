@@ -93,7 +93,6 @@ in_flavor 'master','stable' do
         pkg.doc_dir = 'build'
     end
     
-    cmake_package 'external/minizip'
     autotools_package 'simulation/ode' do |pkg|
         pkg.depends_on 'libtool'
         pkg.provides "pkgconfig/ode"

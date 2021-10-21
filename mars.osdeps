@@ -21,4 +21,8 @@ external/osgQt:
         "20.04, 20.10": nonexistent
         default:
             osdep: osg # included in default packages    
-    debian: osg        
+    debian: osg
+
+external/minizip:
+    ubuntu: libminizip-dev
+

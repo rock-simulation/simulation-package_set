@@ -6,15 +6,18 @@ libtool:
 
 automake:
     debian, ubuntu: [automake]
+    gentoo: sys-devel/automake
 
 zlib: 
     debian,ubuntu: zlib1g-dev
     opensuse: zlib-devel
+    gentoo: sys-libs/zlib
 
 jsoncpp:
     debian: libjsoncpp-dev
     ubuntu:
         default: libjsoncpp-dev
+    gentoo: dev-libs/jsoncpp
 
 external/osgQt:
     ubuntu:
@@ -22,6 +25,7 @@ external/osgQt:
         default:
             osdep: osg # included in default packages    
     debian: osg
+    gentoo: dev-games/openscenegraph-qt
 
 external/minizip:
     ubuntu: libminizip-dev

@@ -46,7 +46,11 @@ mars_package("simulation/mars/plugins/PythonMars") do |pkg|
 end
 mars_package("simulation/mars/common/gui/data_broker_plotter2")
 cmake_package("simulation/mars_extensions/data_broker_graph_view")
-cmake_package("external/osgQt")
+cmake_package("external/osgQt") do |pkg|
+    pkg.depends_on "qt5"
+    pkg.define "USE_QT5", "1"
+    pkg.env_set "USE_QT5", "1"
+end
 
 in_flavor 'stable' do
     mars_package("simulation/mars/scripts/cmake")

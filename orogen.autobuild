@@ -5,6 +5,10 @@ in_flavor 'master' do
 end
 
 in_flavor 'master', 'stable' do
-    orogen_package 'simulation/orogen/mars'
+    orogen_package 'simulation/orogen/mars' do |pkg|
+        pkg.depends_on "qt5"
+        pkg.define "USE_QT5", "1"
+        pkg.env_set "USE_QT5", "1"
+    end
     orogen_package 'simulation/orogen/mars_addons'
 end

@@ -46,7 +46,7 @@ end
 
 in_flavor 'master','stable' do
     mars_package("simulation/mars/entity_generation/entity_factory")
-    mars_package("simulation/mars/entity_generation/smurf")
+    #mars_package("simulation/mars/entity_generation/smurf")
     mars_package("simulation/mars/smurf_loader")
     mars_package("simulation/mars/plugins/Text3D")
     mars_package("simulation/mars/common/graphics/osg_text")

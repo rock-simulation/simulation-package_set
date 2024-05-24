@@ -19,14 +19,6 @@ jsoncpp:
         default: libjsoncpp-dev
     gentoo: dev-libs/jsoncpp
 
-external/osgQt:
-    ubuntu:
-        "20.04, 20.10": nonexistent
-        default:
-            osdep: osg # included in default packages    
-    debian: osg
-    gentoo: dev-games/openscenegraph-qt
-
 external/minizip:
     ubuntu: libminizip-dev
 

@@ -13,24 +13,19 @@ version_control:
 
     - simulation/lib_manager:
         github: rock-simulation/lib_manager.git
-        branch: $ROCK_FLAVOR
 
     - simulation/smurf_parser:
         github: rock-simulation/smurf_parser.git
-        branch: $ROCK_FLAVOR    
 
     - tools/configmaps:
         github: rock-simulation/configmaps.git
-        branch: $ROCK_FLAVOR            
     
     - simulation/orogen/.*:
         github: rock-simulation/simulation-orogen-$PACKAGE_BASENAME.git
-        branch: $ROCK_FLAVOR
    
     #Interrim soluation to not keep two separate repositorys for the same package
     - simulation/orogen/mars_core:
         github: rock-simulation/simulation-orogen-mars.git
-        branch: $ROCK_FLAVOR
 
     - simulation/ode:
       type: archive
@@ -65,7 +60,6 @@ version_control:
 
     - simulation/mars_extensions/data_broker_graph_view:
         github: rock-simulation/data_broker_graph_view.git
-        branch: $ROCK_FLAVOR
 
     - external/osgQt:
         github: rock-simulation/osgQt.git

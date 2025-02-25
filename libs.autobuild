@@ -101,6 +101,7 @@ in_flavor 'master','stable' do
         pkg.provides "pkgconfig/ode"
         pkg.configureflags <<
             "--enable-double-precision" <<
+            "--enable-libccd" <<
             "--disable-demos" <<
             "--enable-malloc" <<
             "--with-drawstuff=none" <<
